@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  border-bottom: 1px solid #000;
+  background-color: #f8f8f8;
+  margin-bottom: 1em;
+}
+header h1 {
+  cursor: pointer;
+  font-size: 2em;
+  padding: 0 1em;
+  font-family: "Courier New", Courier, monospace;
+}
+ul {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+  margin: 0;
+}
+nav ul li {
+  cursor: pointer;
+  font: bold 1.2em sans-serif;
+}
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 0.5em;
+  object-position: center;
+}
+.main-container {
+  display: flex;
+  justify-content: space-around;
+  /* padding: 1em; */
+  width: 100%;
+}
+.left-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  width: 40%;
+  grid-template-columns: 1fr 2fr;
+}
+
+.right-container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.right-container h1 {
+  font-size: 2em;
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 0.5em;
+}
+.right-container p {
+  text-align: center;
+}
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+}
+footer {
+  text-align: center;
+  padding: 1em;
+  margin-top: 1em;
+  background-color: #f1f1f1;
+  font-size: 0.9em;
+}
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+}
+.footer-menu li {
+  cursor: pointer;
+  font: bold 1em sans-serif;
+}
+
+@media (max-width: 1200px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+  }
+  img {
+    width: 95%;
+    height: auto;
+  }
+  .left-container {
+    column-gap: 0.5em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* grid-template-columns: 1fr 1fr; */
+  }
+  .right-container {
+    width: 90%;
+  }
+  header h1 {
+    font-size: 1.5em;
+  }
+  nav ul li {
+    font-size: 1em;
+  }
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+  .footer-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+}
